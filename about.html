@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Peach Marketing Agency</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="text-gray-800">
+
+    <!-- ================= HEADER ================= -->
+    <header class="w-full z-50 bg-[#292929] backdrop-blur">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <!-- Logo -->
+            <img src="https://demo.bosathemes.com/bosa/creative-agency/wp-content/uploads/sites/151/2025/01/main-logo-2.png"
+                class="h-10" alt="logo">
+
+            <!-- Desktop Menu -->
+            <nav
+                class="hidden lg:flex gap-8 text-white text-sm font-medium px-5 py-2.5 border border-white/10 rounded-3xl">
+                <a href="index.html" class="hover:text-[#FF1A4C]">HOME</a>
+                <a href="about.html" class="text-[#FF1A4C]">ABOUT US</a>
+                <a href="services.html" class="hover:text-[#FF1A4C]">SERVICES</a>
+                <a href="portfolio.html" class="hover:text-[#FF1A4C]">PORTFOLIO</a>
+                <a href="contact.html" class="hover:text-[#FF1A4C]">CONTACT US</a>
+            </nav>
+
+            <!-- Get a Quote Button -->
+            <div class="flex gap-6">
+                <a href="contact.html"
+                    class="hidden md:flex gap-1 items-center transition-all duration-300 bg-[#FF1A4C] hover:bg-[#971B36] text-white px-5 py-3 rounded-full text-sm font-semibold">
+                    GET A QUOTE <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <!-- Mobile Burger -->
+                <button id="burger" class="lg:hidden text-white text-2xl focus:outline-none cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay Menu -->
+    <div id="mobileMenu"
+        class="fixed top-0 left-0 w-full h-full bg-black/40 backdrop-blur-sm hidden transition-opacity duration-300 z-50">
+        <div
+            class="absolute right-0 top-0 h-full w-87.5 max-w-full bg-white p-6 flex flex-col justify-start gap-6 transform translate-x-full transition-transform duration-300">
+            <!-- Close Button -->
+            <button id="closeMenu" class="self-end text-2xl font-bold text-gray-700 cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Vertical Links -->
+            <nav class="flex flex-col gap-6 mt-8">
+                <a href="index.html" class="text-gray-900 font-medium hover:text-[#FF1A4C]">HOME</a>
+                <a href="about.html" class="font-medium text-[#FF1A4C]">ABOUT US</a>
+                <a href="services.html" class="text-gray-900 font-medium hover:text-[#FF1A4C]">SERVICES</a>
+                <a href="portfolio.html" class="text-gray-900 font-medium hover:text-[#FF1A4C]">PORTFOLIO</a>
+                <a href="contact.html" class="text-gray-900 font-medium hover:text-[#FF1A4C]">CONTACT US</a>
+            </nav>
+        </div>
+    </div>
+
+        <!-- ================= HERO ================= -->
+    <section class="relative h-62.5 md:h-112.5 flex items-center justify-center hero">
+
+        <div class="absolute inset-0 bg-black/80"></div>
+
+        <h1 class="relative text-white text-4xl md:text-5xl lg:text-6xl font-bold">
+            About Us
+        </h1>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-gray-400 pt-20 pb-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6 text-center md:text-left">
+
+            <div>
+                <h4 class="text-white font-semibold mb-5 text-xl">About Company</h4>
+                <p class="text-gray-200">
+                    Peach Marketing Agency helps authors across all genres grow visibility, credibility, and meaningful reader engagement.
+                </p>
+
+                <div class="flex gap-3 mt-6 justify-center md:justify-start">
+                    <!-- Facebook -->
+                    <a href="#" target="_blank"
+                        class="w-7.5 h-7.5 rounded-full flex items-center justify-center bg-[#FF1A4C] text-white hover:bg-[#971B36] transition-all duration-300">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <!-- X / Twitter -->
+                    <a href="#" target="_blank"
+                        class="w-7.5 h-7.5 rounded-full flex items-center justify-center bg-[#FF1A4C] text-white hover:bg-[#971B36] transition-all duration-300">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="#" target="_blank"
+                        class="w-7.5 h-7.5 rounded-full flex items-center justify-center bg-[#FF1A4C] text-white hover:bg-[#971B36] transition-all duration-300">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="#" target="_blank"
+                        class="w-7.5 h-7.5 rounded-full flex items-center justify-center bg-[#FF1A4C] text-white hover:bg-[#971B36] transition-all duration-300">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="#" target="_blank"
+                        class="w-7.5 h-7.5 rounded-full flex items-center justify-center bg-[#FF1A4C] text-white hover:bg-[#971B36] transition-all duration-300">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <a href="index.html" class="hover:text-[#FF1A4C]">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-[#FF1A4C]">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="hover:text-[#FF1A4C]">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="hover:text-[#FF1A4C]">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="hover:text-[#FF1A4C]">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold text-xl mb-8">Contact Info</h4>
+                <p class="mb-5">Feel free to contact & reach us !!</p>
+                <div class="my-2.5 items-center flex gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-location-dot text-[#FF1A4C]"></i>
+                    <p>3557 Derek Drive, Orlando, Florida</p>
+                </div>
+
+                <div class="my-2.5 items-center flex gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-phone text-[#FF1A4C]"></i>
+                    <p>+01(1256)156-125</p>
+                </div>
+
+                <div class="my-2.5 items-center flex gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-envelope text-[#FF1A4C]"></i>
+                    <p>info@example.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="text-center text-sm text-gray-500 pt-7 mt-7 border-t border-gray-400 mx-3.5">
+            Copyright © 2025 Peach Marketing Agency.
+        </p>
+    </footer>
+
+    <script src="./assets/js/header.js"></script>
+
+</body>
+
+</html>
