@@ -238,12 +238,6 @@
   .left-6 {
     left: calc(var(--spacing) * 6);
   }
-  .-z-0 {
-    z-index: calc(0 * -1);
-  }
-  .-z-10 {
-    z-index: calc(10 * -1);
-  }
   .z-10 {
     z-index: 10;
   }
@@ -403,11 +397,29 @@
   .h-62\.5 {
     height: calc(var(--spacing) * 62.5);
   }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
+  .h-84 {
+    height: calc(var(--spacing) * 84);
+  }
+  .h-86 {
+    height: calc(var(--spacing) * 86);
+  }
   .h-162 {
     height: calc(var(--spacing) * 162);
   }
   .h-162\.5 {
     height: calc(var(--spacing) * 162.5);
+  }
+  .h-\[330\] {
+    height: 330;
+  }
+  .h-\[330px\] {
+    height: 330px;
+  }
+  .h-auto {
+    height: auto;
   }
   .h-full {
     height: 100%;
@@ -715,14 +727,8 @@
   .bg-\[linear-gradient\(83deg\,\#29292900_25\%\,\#292929_60\%\)\] {
     background-image: linear-gradient(83deg,#29292900 25%,#292929 60%);
   }
-  .bg-\[url\(\'\'\)\] {
-    background-image: url('');
-  }
   .bg-\[url\(\'\.\.\/assets\/images\/dott-map\.png\'\)\] {
     background-image: url('../assets/images/dott-map.png');
-  }
-  .bg-\[url\(\'\/path\/to\/image\.jpg\'\)\] {
-    background-image: url('/path/to/image.jpg');
   }
   .bg-cover {
     background-size: cover;
