@@ -16,8 +16,7 @@
     <header class="w-full z-50 bg-[#292929] backdrop-blur">
         <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
             <!-- Logo -->
-            <img src="./assets/images/logo.jpeg"
-                class="h-10" alt="logo">
+            <img src="./assets/images/logo.jpeg" class="h-10" alt="logo">
 
             <!-- Desktop Menu -->
             <nav
@@ -79,9 +78,9 @@
 
     <!-- ================= CONTACT INFO CARDS ================= -->
     <section class="bg-gray-50 py-20">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-8 px-6">
 
-            <div class="bg-white rounded-2xl shadow p-7 gap-5 flex flex-col text-center md:text-left">
+            <!-- <div class="bg-white rounded-2xl shadow p-7 gap-5 flex flex-col text-center md:text-left">
                 <div class="flex gap-2.5 items-center pb-5 justify-center border-b border-gray-200">
                     <div class="w-16 h-16 flex items-center justify-center bg-[#FF1A4C] text-white rounded-full">
                         <i class="fa-solid fa-location-dot text-3xl"></i>
@@ -95,9 +94,9 @@
                     <p class="text-gray-600">65th Street, Los Angeles,</p>
                     <p class="text-gray-600">3rd Street, San Andreas,</p>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="bg-white rounded-2xl shadow p-7 gap-5 flex flex-col text-center md:text-left">
+            <!-- <div class="bg-white rounded-2xl shadow p-7 gap-5 flex flex-col text-center md:text-left">
                 <div class="flex gap-2.5 items-center pb-5 justify-center border-b border-gray-200">
                     <div class="w-16 h-16 flex items-center justify-center bg-[#FF1A4C] text-white rounded-full">
                         <i class="fa-solid fa-phone text-3xl"></i>
@@ -109,9 +108,37 @@
                 </div>
                 <div>
                     <p class="text-gray-600">Tel : +13173393918</p>
-                    <p class="text-gray-600">Mob : +13173393918</p>
+                </div>
+            </div> -->
+
+            <div class="bg-white rounded-2xl shadow p-7 gap-5 flex flex-col text-center md:text-left">
+                <div class="flex gap-2.5 items-center pb-5 justify-center border-b border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-[#FF1A4C] text-white rounded-full">
+                        <i class="fa-solid fa-phone text-3xl"></i>
+                    </div>
+                    <div>
+                        <h6 class="text-gray-600 text-sm">24*7 SERVICE</h6>
+                        <h4 class="font-semibold text-slate-800 text-xl">Call or WhatsApp</h4>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="text-gray-600 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone text-[#FF1A4C]"></i>
+                        <a href="tel:+13173393918" class="hover:text-[#FF1A4C] transition">
+                            +1 317 339 3918
+                        </a>
+                    </p>
+
+                    <p class="text-gray-600 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-[#FF1A4C]"></i>
+                        <a href="https://wa.me/13173393918" target="_blank" class="hover:text-[#FF1A4C] transition">
+                            +1 317 339 3918
+                        </a>
+                    </p>
                 </div>
             </div>
+
 
             <div class="bg-white rounded-2xl shadow p-7 gap-5 flex flex-col text-center md:text-left">
                 <div class="flex gap-2.5 items-center pb-5 justify-center border-b border-gray-200">
@@ -123,12 +150,19 @@
                         <h4 class="font-semibold text-slate-800 text-xl">Mail Address</h4>
                     </div>
                 </div>
+
                 <div>
-                    <p class="text-gray-600">peachmarketing311@gmail.com</p>
+                    <p class="text-gray-600 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-envelope text-[#FF1A4C]"></i>
+                        <a href="mailto:peachmarketing311@gmail.com" class="hover:text-[#FF1A4C] transition">
+                            peachmarketing311@gmail.com
+                        </a>
+                    </p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl shadow p-7 gap-5 flex flex-col text-center md:text-left">
+
+            <!-- <div class="bg-white rounded-2xl shadow p-7 gap-5 flex flex-col text-center md:text-left">
                 <div class="flex gap-2.5 items-center pb-5 justify-center border-b border-gray-200">
                     <div class="w-16 h-16 flex items-center justify-center bg-[#FF1A4C] text-white rounded-full">
                         <i class="fa-regular fa-clock text-3xl"></i>
@@ -142,7 +176,7 @@
                     <p class="text-gray-600">Mon – Fri : 9am – 6pm</p>
                     <p class="text-gray-600">Sunday (Closed)</p>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -229,7 +263,7 @@
             </div>
 
             <!-- FORM -->
-            <form class="bg-gray-50 p-8 rounded-2xl shadow">
+            <!-- <form class="bg-gray-50 p-8 rounded-2xl shadow">
                 <div class="grid grid-cols-1 gap-4">
                     <input type="text" placeholder="Your Name" class="w-full p-4 rounded-full border outline-none">
 
@@ -245,7 +279,52 @@
                         SEND MESSAGE
                     </button>
                 </div>
+            </form> -->
+
+            <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                class="bg-gray-50 p-8 rounded-2xl shadow">
+                <!-- Hidden field for Netlify -->
+                <input type="hidden" name="form-name" value="contact">
+
+                <!-- Honeypot field for spam -->
+                <p class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                </p>
+
+                <div class="grid grid-cols-1 gap-4">
+                    <input type="text" name="name" placeholder="Your Name" required
+                        class="w-full p-4 rounded-full border">
+                    <input type="email" name="email" placeholder="Your Email" required
+                        class="w-full p-4 rounded-full border">
+                    <input type="text" name="subject" placeholder="Your Subject" required
+                        class="w-full p-4 rounded-full border">
+                    <textarea name="message" rows="5" placeholder="Your Message" required
+                        class="w-full p-4 rounded-2xl border"></textarea>
+                    <button type="submit" class="bg-[#FF1A4C] text-white py-3 rounded-full px-10">SEND MESSAGE</button>
+                </div>
             </form>
+
+            <script>
+                const form = document.getElementById('contactForm');
+
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    const data = new FormData(form);
+
+                    fetch("/", {
+                        method: "POST",
+                        body: data
+                    })
+                        .then(() => {
+                            alert("✅ Message sent successfully!"); // Popup success
+                            form.reset();
+                        })
+                        .catch(() => {
+                            alert("❌ Failed to send message. Please try again."); // Popup error
+                        });
+                });
+            </script>
 
         </div>
     </section>
