@@ -29,6 +29,6 @@ function animateBar(id, target) {
 }
 
 window.addEventListener("load", () => {
-    animateBar("bar95", 95);
-    animateBar("bar88", 88);
+    animateBar("bar95", 100);
+    animateBar("bar88", 100);
 });
